@@ -6,6 +6,14 @@ It teaches an AI agent how to choose between GSAP, Motion, Lenis, ScrollTrigger,
 
 ## Installation
 
+For the Magic Patterns **Install Skill** dialog, paste exactly this command:
+
+```bash
+npx skills add https://github.com/filipe-dev-macae/premium-animations --skill premium-animations
+```
+
+Make sure the command includes the skill name after `--skill`.
+
 Install from GitHub with the Skills CLI:
 
 ```bash
@@ -53,6 +61,7 @@ Magic Patterns Agent 2.0 supports Skills as specialized instruction files loaded
 - Optional supporting files can live in folders such as `references/`, `examples/`, `scripts/`, or `assets/`.
 
 This repository keeps `SKILL.md` at the repository root so `npx skills add` can discover it without extra flags.
+It also includes a mirrored `skills/premium-animations/` package for web importers that expect catalog-style skill repositories.
 
 ## Directory Structure
 
@@ -88,6 +97,11 @@ premium-animations/
     ├── motion-philosophy.md
     ├── premium-ui-principles.md
     └── scroll-design.md
+└── skills/
+    └── premium-animations/
+        ├── SKILL.md
+        ├── examples/
+        └── references/
 ```
 
 ## Best Practices
